@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion'
-import { getEventStatusLabel } from '@/config/site'
 import { useEventStats } from '@/hooks/useEventStats'
-import { isBackendConfigured } from '@/services/api'
 import { Container } from '@/components/ui/Panel'
 import { Stat } from '@/components/ui/Stat'
 
@@ -11,7 +9,6 @@ import { Stat } from '@/components/ui/Stat'
  */
 export function EventStats() {
   const { data = [], isLoading } = useEventStats()
-  const backendConfigured = isBackendConfigured()
   const stats = data.length ? data : Array.from({ length: 4 }, (_, index) => ({ id: String(index), label: '—', value: 0, suffix: '', hint: '' }))
 
   return (

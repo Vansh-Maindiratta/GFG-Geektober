@@ -99,9 +99,6 @@ export function XpSystem() {
           </div>
         )}
 
-        <p className="mx-auto mt-8 max-w-2xl text-center font-mono text-[11.5px] leading-relaxed text-dim">
-          // ranges are configurable: scoring rules live in the backend, not in the components
-        </p>
       </Container>
     </section>
   )

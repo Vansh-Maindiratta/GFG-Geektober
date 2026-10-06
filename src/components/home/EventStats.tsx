@@ -30,10 +30,6 @@ export function EventStats() {
             </motion.div>
           ))}
         </div>
-
-        <p className="mt-10 text-center font-mono text-[11px] uppercase tracking-[0.3em] text-dim">
-          STATUS: <span className="text-brand-bright">{backendConfigured ? getEventStatusLabel() : 'DEMO SNAPSHOT'}</span> · INDIVIDUAL_MODE: ON
-        </p>
       </Container>
     </section>
   )
